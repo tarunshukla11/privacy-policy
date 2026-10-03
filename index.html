@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Life & Lessons</title>
+  <meta name="description" content="Privacy Policy for Life & Lessons quotes application. Privacy-first, offline-first, no data collection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #08090d;
+      --card-bg: #11131c;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --accent: #eab308;
+      --accent-glow: rgba(234, 179, 8, 0.15);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-sub: #cbd5e1;
+      --code-bg: rgba(255, 255, 255, 0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1.25rem 4rem 1.25rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 820px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--accent-glow);
+      color: var(--accent);
+      border: 1px solid rgba(234, 179, 8, 0.3);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 600;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .meta-card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.25rem;
+      margin: 2rem 0;
+      font-size: 0.85rem;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .meta-label {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.2rem;
+    }
+
+    .meta-val {
+      color: var(--text-sub);
+      font-weight: 600;
+    }
+
+    .meta-val a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .meta-val a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h2 .icon {
+      color: var(--accent);
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: var(--text-sub);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      position: relative;
+      padding-left: 1.6rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-sub);
+      font-size: 0.93rem;
+    }
+
+    li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 0.8rem;
+      top: 0.2rem;
+    }
+
+    /* Table */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.25rem 0;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-main);
+      padding: 0.85rem 1rem;
+      font-weight: 600;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: var(--text-sub);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    code {
+      background: var(--code-bg);
+      color: var(--accent);
+      padding: 0.15rem 0.4rem;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.82rem;
+    }
+
+    .highlight-box {
+      background: rgba(234, 179, 8, 0.06);
+      border-left: 4px solid var(--accent);
+      padding: 1.2rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.25rem 0;
+    }
+
+    .highlight-box p {
+      color: var(--text-main);
+      font-weight: 500;
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.85rem 3rem 0.85rem;
+      }
+      section {
+        padding: 1.35rem;
+      }
+      .meta-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <header>
+      <div class="badge">Privacy-First Architecture</div>
+      <h1>Life & Lessons</h1>
+      <div class="subtitle">Official Privacy Policy for Quotes App & Android Application</div>
+    </header>
+
+    <div class="meta-card">
+      <div class="meta-item">
+        <span class="meta-label">Application</span>
+        <span class="meta-val">Life & Lessons (Quotes App)</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Package Name</span>
+        <span class="meta-val"><code>com.lifeandlessons.app</code></span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Effective Date</span>
+        <span class="meta-val">October 3, 2026</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Developer</span>
+        <span class="meta-val">Tarun Shukla</span>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <section>
+      <h2><span class="icon">🛡️</span> 1. Core Commitment & Philosophy</h2>
+      <div class="highlight-box">
+        <p>Life & Lessons is built on a simple foundation: <strong>Complete User Privacy</strong>. We believe daily wisdom and inspirational perspective should be calm, distraction-free, and private.</p>
+      </div>
+      <p>Our principles are unambiguous:</p>
+      <ul>
+        <li><strong>Zero Account Requirements:</strong> You never need to register, create a profile, or enter an email address.</li>
+        <li><strong>Zero Tracking & Advertising:</strong> We do not track you, profile your behavior, or serve advertisements.</li>
+        <li><strong>Offline-First:</strong> All 256 curated quotes, favorites, and settings function locally on your device without transmitting data over the internet.</li>
+      </ul>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+      <h2><span class="icon">📊</span> 2. Information We Collect (Or Do Not Collect)</h2>
+      <p><strong>Personal Data:</strong> We do not collect, store, or sell any personal data such as names, phone numbers, email addresses, physical locations, IP addresses, or payment details.</p>
+      <p><strong>Local Device Storage:</strong> The following preferences are kept strictly within your device's private sandboxed storage (via Android <code>SharedPreferences</code> and browser <code>localStorage</code>):</p>
+      <ul>
+        <li><strong>Saved Favorites:</strong> The thoughts you bookmark with the heart icon.</li>
+        <li><strong>Shuffle Memory:</strong> Recently viewed quote IDs used to prevent consecutive repeats.</li>
+        <li><strong>Themes & Fonts:</strong> Your preferred ambient palette (Gold, Aurora, etc.) and typeface.</li>
+        <li><strong>Wallpaper Preferences:</strong> Chosen wallpaper schedule (Daily, Screen-Lock mode) and target screens.</li>
+      </ul>
+      <p>This data never leaves your device and is never uploaded to any remote server.</p>
+    </section>
+
+    <!-- Section 3 -->
+    <section>
+      <h2><span class="icon">📱</span> 3. Android Permissions & Justification</h2>
+      <p>The Android version of the app requests only the minimal permissions required to deliver its native capabilities:</p>
+      
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Android API</th>
+              <th>Reason for Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Set Wallpaper</strong></td>
+              <td><code>android.permission.SET_WALLPAPER</code></td>
+              <td>Applies wisdom quote wallpapers to Home Screen, Lock Screen, or both, including automated daily or screen-lock updates.</td>
+            </tr>
+            <tr>
+              <td><strong>Boot Completed</strong></td>
+              <td><code>android.permission.RECEIVE_BOOT_COMPLETED</code></td>
+              <td>Restores your chosen wallpaper schedule and refreshes Home Screen Widgets after your device restarts.</td>
+            </tr>
+            <tr>
+              <td><strong>Notifications</strong></td>
+              <td><code>android.permission.POST_NOTIFICATIONS</code></td>
+              <td>Delivers your optional daily thought reminder at your scheduled morning time. No spam or marketing messages.</td>
+            </tr>
+            <tr>
+              <td><strong>Internet</strong></td>
+              <td><code>android.permission.INTERNET</code></td>
+              <td>Standard web container requirement for Capacitor. The application library works 100% offline.</td>
+            </tr>
+            <tr>
+              <td><strong>Storage (Legacy)</strong></td>
+              <td><code>android.permission.WRITE_EXTERNAL_STORAGE</code></td>
+              <td>Only used on older Android versions if you tap "Export Collection" or save a wallpaper to your Downloads.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section>
+      <h2><span class="icon">🖼️</span> 4. Home Screen Widgets & Screen-Lock Automation</h2>
+      <p><strong>Native Android Widgets:</strong> Small (2x2), Medium (4x2), and Large (4x3) widgets render through native Android <code>RemoteViews</code>. They read quotes from the local offline database and do not collect any usage data.</p>
+      <p><strong>Screen-Lock Wallpaper Mode:</strong> If you enable "Every time screen is locked" in Wallpaper Studio, a native background receiver listens locally for <code>Intent.ACTION_SCREEN_OFF</code> to apply a fresh quote when you lock your device. It runs for less than 50ms, requires no wake locks, and works fully offline.</p>
+    </section>
+
+    <!-- Section 5 -->
+    <section>
+      <h2><span class="icon">🔒</span> 5. Third-Party Services & Children's Privacy</h2>
+      <p><strong>No Third-Party SDKs:</strong> We do not include third-party trackers, ad networks (such as Google AdMob or Unity Ads), or behavioral analytics.</p>
+      <p><strong>Children's Privacy (COPPA):</strong> Life & Lessons is suitable for all ages and contains no harmful or sensitive material. We do not collect information from children under 13.</p>
+    </section>
+
+    <!-- Section 6 -->
+    <section>
+      <h2><span class="icon">🗑️</span> 6. User Control & Data Deletion</h2>
+      <p>You have complete control over all stored data:</p>
+      <ul>
+        <li>You can clear all saved favorites at any time in <strong>Settings → Clear Saved Quotes</strong>.</li>
+        <li>You can reset seen quote history in <strong>Settings → Reset Shuffle Memory</strong>.</li>
+        <li>Uninstalling the app immediately and permanently removes all stored data, preferences, and cached wallpapers from your device.</li>
+      </ul>
+    </section>
+
+    <!-- Section 7 -->
+    <section>
+      <h2><span class="icon">📬</span> 7. Contact Information</h2>
+      <p>If you have questions or feedback regarding this Privacy Policy, please reach out to:</p>
+      <p>
+        <strong>Tarun Shukla</strong><br>
+        Email: <a href="mailto:tarunshukla913@gmail.com" style="color:var(--accent);">tarunshukla913@gmail.com</a><br>
+        GitHub: <a href="https://github.com/tarunshukla11/turtlecode1" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">https://github.com/tarunshukla11/turtlecode1</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Life & Lessons. Good thoughts. Better perspective.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
