@@ -6,7 +6,7 @@
 **Package Name:** `com.lifeandlessons.app`  
 **Developer:** Tarun Shukla  
 **Contact Email:** [tarunshukla913@gmail.com](mailto:tarunshukla913@gmail.com)  
-**Repository:** [https://github.com/tarunshukla11/turtlecode1](https://github.com/tarunshukla11/turtlecode1)  
+**Privacy Policy Repository:** [https://github.com/tarunshukla11/privacy-policy](https://github.com/tarunshukla11/privacy-policy)  
 
 ---
 
